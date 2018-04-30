@@ -8,8 +8,9 @@
                 <%- partial('post/title', { class_name: 'article-title' }) %>
                 <% if (post.layout != 'page') { %>
                     <div class="article-meta">
+                        <%- partial('post/original') %>
                         <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
-                        <%- partial('post/category') %>
+                        <!-- <%- partial('post/category') %> -->
                         <%- partial('post/tag') %>
                     </div>
                 <% } %>
@@ -33,8 +34,10 @@
         <% } %>
         </div>
         <footer class="article-footer">
+            <%- partial('post/tag', { post: post }) %>
             <%- partial('share/index', { post: post }) %>
-            <%- partial('comment/counter', { post: post }) %>
+           
+            <!-- <%- partial('comment/counter', { post: post }) %> -->
         </footer>
     </div>
     <% if (!index) { %>

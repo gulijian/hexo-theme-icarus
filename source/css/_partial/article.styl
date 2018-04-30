@@ -11,17 +11,18 @@
 
 .article-header
     padding: article-padding article-padding 0
+    color: #f78585
     .article-title
         display: block
         margin-bottom: 14px
 
 .article-title
     font-size: 2em
-    color: color-default
+    color: #00a67c
     text-decoration: none
     line-height: line-height-title
     a&:visited
-        color: color-default
+        color: #087b5e
     a&:hover
         color: color-link
     @media mq-mini
@@ -32,16 +33,37 @@
 .article-meta
     @extend $block-caption
     clearfix()
-    line-height: 1.6em
+    line-height: 2em
+    padding: 5px 0px;
+    border-top: 1px solid #ecebeb;
+    border-bottom: 1px solid #ecebeb;
     & > div
-        float: left
-        margin-right: 10px
+        float: left;
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: solid 1px #ecebeb;
         .fa
             margin-right: 3px
     a
         color: color-default
         &:hover
             color: color-link
+.article-meta span.article-type.type-1 {
+    color: #d9534f;
+    border: 2px solid #d9534f;
+ }
+.article-meta span.article-type {
+    margin-right: 8px;
+    margin-top: 0;
+    vertical-align: 2px;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 50%
+}
 
 .article-category
     .fa-angle-right
@@ -189,7 +211,7 @@
         padding-right: 5px
 
 .share-container
-    float: left
+    float: right 
 
 .article-share-link
     float: right
