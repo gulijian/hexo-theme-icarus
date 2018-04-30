@@ -1,9 +1,9 @@
-<% if (post.link) { %>
+<% if (post.original) { %>
     <div class="article-type">		  
             <span class="article-type type-1">原创</span>  
     </div>
-<% } else if (post.title) { %>
+<% } else if (!post.original) { %>
     <div class="article-type">		  
-            <span class="article-type type-1">原创</span>  
+            <span class="article-type type-1">转载</span>  
     </div>
 <% } %>

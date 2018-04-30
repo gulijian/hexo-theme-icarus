@@ -13,6 +13,9 @@
                         <!-- <%- partial('post/category') %> -->
                         <%- partial('post/user') %>
                         <%- partial('post/tag') %>
+                        <% if (is_post()) { %>
+                            <%- partial('post/busuanzi') %>
+                        <% } %>
                     </div>
                 <% } %>
             </header>
