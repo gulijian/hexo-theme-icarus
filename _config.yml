@@ -18,7 +18,7 @@ customize:
         avatar: css/images/avatar.png
         gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
         author: 顾立剑
-        author_title: 会点前端，懂点后端，玩玩大数据
+        author_title: 没有收拾残局的能力，就别放纵善变的情绪
         location: 中国-上海
         follow: https://github.com/gulijian
     highlight: monokai
@@ -94,4 +94,4 @@ miscellaneous:
         twitter_id:
         google_plus:
     links:
-        docker: 
+        docker: https://yeasy.gitbooks.io/docker_practice/content/introduction/what.html
